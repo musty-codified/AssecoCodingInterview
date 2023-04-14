@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Solution {
 
 
@@ -43,30 +46,28 @@ public class Solution {
     }
 
 
-    public int [] solution3 ( int [] numbers){
+    public List<Integer> solution3 ( int [] numbers){
 
 
+        List<Integer>  newArr = new ArrayList<>();
 
-
-
-        int [] returnValue = new int[];
 
         for (int i = 0; i < numbers.length; i++){
 
             if (numbers[i] % 2 != 0 && numbers[i] > 2 ){
-                return returnValue;
+                 newArr.add(numbers[i]);
 
             }
         }
 
 
-        return  returnValue;
 
-        }
-        return -1;
+
+        return newArr;
     }
-
-
 }
+
+
+
 
 
